@@ -4,11 +4,13 @@ import ProductList from './components/ProductList'
 import ProductDetail from './components/ProductDetail'
 import AddProduct from './components/AddProduct'
 import DeleteProduct from './components/DeleteProduct'
+import NavBar from './components/NavBar'
 
 function App() {
 
   return (
     <BrowserRouter>
+      <NavBar/>
       <div className='app'>
         <Routes>
           <Route path='/' element={<ProductList/>} />
